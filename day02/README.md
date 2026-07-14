@@ -93,3 +93,48 @@ terraform destroy
 See the [screenshots](./screenshots) folder for Terraform console, plan, running container, Nginx browser, output, and destroy proof.
 
 > `terraform.tfvars`, Terraform state files, and the `.terraform` directory are intentionally excluded from version control.
+
+
+## Proof of completion
+
+The screenshots below are the actual command captures from the Day 2 hands-on.
+
+### Working directory
+
+[![Working directory](./screenshots/Screenshot%202026-07-13%20225953.png)](./screenshots/Screenshot%202026-07-13%20225953.png)
+
+### Terraform validate
+
+[![Terraform validate](./screenshots/Screenshot%202026-07-13%20232104.png)](./screenshots/Screenshot%202026-07-13%20232104.png)
+
+### Terraform console
+
+[![Terraform console](./screenshots/Screenshot%202026-07-13%20232154.png)](./screenshots/Screenshot%202026-07-13%20232154.png)
+
+### Terraform plan
+
+[![Terraform plan](./screenshots/Screenshot%202026-07-13%20232234.png)](./screenshots/Screenshot%202026-07-13%20232234.png)
+
+### Plan outputs
+
+[![Plan outputs](./screenshots/Screenshot%202026-07-13%20232301.png)](./screenshots/Screenshot%202026-07-13%20232301.png)
+
+### Terraform apply
+
+[![Terraform apply](./screenshots/Screenshot%202026-07-13%20232419.png)](./screenshots/Screenshot%202026-07-13%20232419.png)
+
+### Docker container running
+
+[![Docker container running](./screenshots/Screenshot%202026-07-13%20232504.png)](./screenshots/Screenshot%202026-07-13%20232504.png)
+
+### Nginx browser
+
+[![Nginx browser](./screenshots/Screenshot%202026-07-13%20232536.png)](./screenshots/Screenshot%202026-07-13%20232536.png)
+
+### Terraform destroy
+
+[![Terraform destroy](./screenshots/Screenshot%202026-07-13%20232752.png)](./screenshots/Screenshot%202026-07-13%20232752.png)
+
+### terraform.tfvars plan
+
+[![terraform.tfvars plan](./screenshots/Screenshot%202026-07-13%20233057.png)](./screenshots/Screenshot%202026-07-13%20233057.png)
