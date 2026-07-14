@@ -7,7 +7,8 @@ Hands-on Terraform learning journey for the **TerraWeek Challenge** by TrainWith
 | Day | Topic | Status |
 | --- | --- | --- |
 | [Day 01](./day01/README.md) | Introduction to IaC & Terraform Basics | Completed ✅ |
-| Day 02–07 | Coming soon | Planned |
+| [Day 02](./day02/README.md) | HCL Deep Dive: Variables, Types & Expressions | Completed ✅ |
+| Day 03–07 | Coming soon | Planned |
 
 ## Repository structure
 
@@ -19,6 +20,16 @@ Hands-on Terraform learning journey for the **TerraWeek Challenge** by TrainWith
 │       ├── main.tf
 │       ├── outputs.tf
 │       └── README.md
+├── day02/
+│   ├── README.md                 # HCL notes, variables, outputs, and proof
+│   ├── example/                  # Docker / Nginx Terraform hands-on
+│   │   ├── versions.tf
+│   │   ├── variables.tf
+│   │   ├── locals.tf
+│   │   ├── main.tf
+│   │   ├── outputs.tf
+│   │   └── terraform.tfvars.example
+│   └── screenshots/              # Terraform and Docker proof
 ├── .gitignore
 └── README.md
 ```
