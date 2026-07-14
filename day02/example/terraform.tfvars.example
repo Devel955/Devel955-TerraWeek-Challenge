@@ -1,0 +1,8 @@
+container_name = "tws-web-tfvars"
+external_port  = 8081
+environment    = "staging"
+
+labels = {
+  owner = "Devel955"
+  track = "tfvars"
+}
