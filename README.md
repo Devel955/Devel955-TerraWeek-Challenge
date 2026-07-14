@@ -52,6 +52,32 @@ terraform destroy
 
 > The Day 1 example uses only the `local` and `random` providers. It does not need a cloud account or credentials and does not create any billable resources.
 
+## Run Day 2
+
+**Prerequisite:** Docker Desktop must be running. This hands-on pulls `nginx:alpine` and starts it locally with the Docker provider—no cloud account or cloud cost is required.
+
+```bash
+cd day02/example
+terraform init
+terraform fmt
+terraform validate
+terraform plan -var 'container_name=tws-web' -var 'external_port=8080'
+terraform apply -var 'container_name=tws-web' -var 'external_port=8080'
+terraform output
+terraform destroy -var 'container_name=tws-web' -var 'external_port=8080'
+```
+
+Try the reusable `terraform.tfvars` flow as well:
+
+```bash
+cp terraform.tfvars.example terraform.tfvars
+terraform plan
+terraform apply
+terraform destroy
+```
+
+> Explore `upper()`, `merge()`, and `join()` with `terraform console`; type `exit` when finished. See the [Day 2 notes and screenshot proof](./day02/README.md).
+
 ## Connect
 
 - Challenge: #TrainWithShubham #TerraWeekChallenge
