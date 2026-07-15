@@ -42,7 +42,6 @@ day03/
 │   ├── locals.tf
 │   ├── main.tf
 │   └── outputs.tf
-└── screenshots/
 ```
 
 ## Run it
@@ -88,22 +87,36 @@ The Nginx page was successfully served from the Terraform-provisioned EC2 instan
 
 #TrainWithShubham #TerraWeekChallenge
 
+## Proof screenshots
 
-## Proof screenshot
+### Terraform initialization
 
-Nginx served successfully from the Terraform-provisioned EC2 instance.
+### Terraform initialization
+
+The AWS provider was installed and the Terraform working directory initialized successfully.
+
+<img width="937" height="407" alt="Terraform initialized with the AWS provider" src="https://github.com/user-attachments/assets/62dd6e83-dcbc-45ad-9783-2322878fb3e2" />
+
+### Nginx served from EC2
+
+Nginx was served successfully from the Terraform-provisioned EC2 instance.
 
 <img width="1221" height="221" alt="Nginx page served from Terraform EC2" src="https://github.com/user-attachments/assets/b0207b44-1eb0-4221-947a-f72aaa498295" />
 
-
-## Terraform plan proof
+### Terraform update plan
 
 The environment-tag change was reviewed as an in-place update before applying it.
 
 <img width="917" height="978" alt="Terraform update plan" src="https://github.com/user-attachments/assets/6a124ffb-5324-4028-af86-e588e355f717" />
 
-## Cleanup proof
+### Cleanup proof
 
 All nine AWS resources were removed with Terraform destroy.
 
 <img width="720" height="440" alt="Terraform destroy complete" src="https://github.com/user-attachments/assets/945d33b2-9e12-4f36-8bd7-7b19959232f0" />
+
+### EC2 instance running
+
+AWS Console confirms the Terraform-provisioned t3.micro instance was running and passed its status checks.
+
+<img width="1190" height="277" alt="EC2 instance running" src="https://github.com/user-attachments/assets/c2b939eb-7205-4b97-aa79-a65fc6e48449" />
