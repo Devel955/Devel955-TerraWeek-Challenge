@@ -87,3 +87,10 @@ The Nginx page was successfully served from the Terraform-provisioned EC2 instan
 - Review the plan before every apply and destroy resources to control cloud cost.
 
 #TrainWithShubham #TerraWeekChallenge
+
+
+## Proof screenshot
+
+Nginx served successfully from the Terraform-provisioned EC2 instance.
+
+<img width="1221" height="221" alt="Nginx page served from Terraform EC2" src="https://github.com/user-attachments/assets/b0207b44-1eb0-4221-947a-f72aaa498295" />
