@@ -94,3 +94,16 @@ The Nginx page was successfully served from the Terraform-provisioned EC2 instan
 Nginx served successfully from the Terraform-provisioned EC2 instance.
 
 <img width="1221" height="221" alt="Nginx page served from Terraform EC2" src="https://github.com/user-attachments/assets/b0207b44-1eb0-4221-947a-f72aaa498295" />
+
+
+## Terraform plan proof
+
+The environment-tag change was reviewed as an in-place update before applying it.
+
+<img width="917" height="978" alt="Terraform update plan" src="https://github.com/user-attachments/assets/6a124ffb-5324-4028-af86-e588e355f717" />
+
+## Cleanup proof
+
+All nine AWS resources were removed with Terraform destroy.
+
+<img width="720" height="440" alt="Terraform destroy complete" src="https://github.com/user-attachments/assets/945d33b2-9e12-4f36-8bd7-7b19959232f0" />
