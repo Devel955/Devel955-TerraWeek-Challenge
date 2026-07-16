@@ -77,3 +77,4 @@ After documenting the exercise, destroy the demo resources and delete the tempor
 
 ### Imported resource state verified
 <img width="1260" height="221" alt="clipboard" src="https://github.com/user-attachments/assets/5965a122-6472-4e3d-8ad6-7b8abae767f1" />
+#TrainWithShubham #TerraWeekChallenge
