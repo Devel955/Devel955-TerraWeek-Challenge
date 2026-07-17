@@ -116,37 +116,24 @@ terraform destroy
 
 ## Proof screenshots
 
-Add the captured command and configuration screenshots in `day05/screenshots/`:
+### Module and Terraform workflow
 
-1. Local module structure
-2. `terraform init` and `terraform validate`
-3. `for_each` plan for web, app, worker, and cache
-4. Temporary EC2 apply output
-5. Terraform destroy output
-6. Registry VPC module with `version = "~> 5.0"`
+![Local module structure](screenshots/01-module-structure.png)
+
+![Terraform init](screenshots/02-terraform-init-clean.png)
+
+![Terraform validation](screenshots/03-terraform-validate.png)
+
+### Multiple instances and cleanup
+
+![for_each plan](screenshots/04-for-each-plan.png)
+
+![Temporary EC2 apply](screenshots/05-ec2-apply.png)
+
+![Terraform destroy](screenshots/06-terraform-destroy.png)
+
+The Registry VPC configuration is available in [`example/registry-vpc.tf`](example/registry-vpc.tf) and remains disabled by default.
 
 ## Cleanup
 
 The temporary EC2 instance was destroyed successfully after verification. The default VPC has no billed compute resources.
-
-
-## Screenshot Gallery
-
-### Module structure
-![Module structure](screenshots/01-module-structure.png)
-
-### Terraform init
-![Terraform init](screenshots/02-terraform-init.png)
-
-### Terraform validate
-![Terraform validate](screenshots/03-terraform-validate.png)
-
-### for_each plan
-![for_each plan](screenshots/04-for-each-plan.png)
-
-### Temporary EC2 apply
-![EC2 apply](screenshots/05-ec2-apply.png)
-
-### Cleanup
-![Terraform destroy](screenshots/06-terraform-destroy.png)
-#TrainWithShubham #TerraWeekChallenge
