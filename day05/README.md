@@ -128,3 +128,24 @@ Add the captured command and configuration screenshots in `day05/screenshots/`:
 ## Cleanup
 
 The temporary EC2 instance was destroyed successfully after verification. The default VPC has no billed compute resources.
+
+
+## Screenshot Gallery
+
+### Module structure
+![Module structure](screenshots/01-module-structure.png)
+
+### Terraform init
+![Terraform init](screenshots/02-terraform-init.png)
+
+### Terraform validate
+![Terraform validate](screenshots/03-terraform-validate.png)
+
+### for_each plan
+![for_each plan](screenshots/04-for-each-plan.png)
+
+### Temporary EC2 apply
+![EC2 apply](screenshots/05-ec2-apply.png)
+
+### Cleanup
+![Terraform destroy](screenshots/06-terraform-destroy.png)
