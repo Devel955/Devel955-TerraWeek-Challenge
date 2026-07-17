@@ -149,3 +149,4 @@ The temporary EC2 instance was destroyed successfully after verification. The de
 
 ### Cleanup
 ![Terraform destroy](screenshots/06-terraform-destroy.png)
+#TrainWithShubham #TerraWeekChallenge
