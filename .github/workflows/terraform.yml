@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   terraform:
-    name: fmt-validate-test
+    name: fmt-validate-plan-test
     runs-on: ubuntu-latest
 
     defaults:
@@ -34,6 +34,9 @@ jobs:
 
       - name: Terraform validate
         run: terraform validate
+
+      - name: Terraform plan
+        run: terraform plan -input=false -lock=false
 
       - name: Terraform test
         run: terraform test
