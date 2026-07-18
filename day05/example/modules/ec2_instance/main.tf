@@ -8,6 +8,10 @@ resource "aws_instance" "this" {
     http_tokens = "required"
   }
 
+  root_block_device {
+    encrypted = true
+  }
+
   tags = merge(
     var.tags,
     {
