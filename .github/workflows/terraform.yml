@@ -48,3 +48,69 @@ jobs:
           scan-ref: day06/example
           severity: HIGH,CRITICAL
           exit-code: "1"
+
+  day5_security:
+    name: day5-security-scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Scan Day 5 Terraform configuration
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: config
+          scan-ref: day05/example
+          severity: HIGH,CRITICAL
+          exit-code: "1"
+name: Terraform Quality Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  terraform:
+    name: fmt-validate-plan-test
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: day06/example
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.15.8"
+
+      - name: Terraform format check
+        run: terraform fmt -check -recursive
+
+      - name: Terraform init
+        run: terraform init -input=false
+
+      - name: Terraform validate
+        run: terraform validate
+
+      - name: Terraform plan
+        run: terraform plan -input=false -lock=false
+
+      - name: Terraform test
+        run: terraform test
+
+      - name: Trivy security scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: config
+          scan-ref: day06/example
+          severity: HIGH,CRITICAL
+          exit-code: "1"
